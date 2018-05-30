@@ -8,5 +8,7 @@ public class AscaryApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AscaryApplication.class, args);
+		
+	
 	}
 }
