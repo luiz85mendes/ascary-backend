@@ -14,7 +14,7 @@ public class Wheels {
 	
 	private String name;
 	private String brand;
-	private double amount;
+	private Double amount;
 
 	public long getId() {
 		return id;
