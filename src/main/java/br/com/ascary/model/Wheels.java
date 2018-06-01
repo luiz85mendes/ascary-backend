@@ -1,13 +1,22 @@
 package br.com.ascary.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Wheels {
 	
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
+	
 	private String name;
 	private String brand;
 	private double amount;
 
-	public Integer getId() {
+	public long getId() {
 		return id;
 	}
 	public void setId(Integer id) {
