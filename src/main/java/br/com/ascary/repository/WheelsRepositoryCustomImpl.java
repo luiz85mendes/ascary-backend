@@ -14,11 +14,14 @@ public class WheelsRepositoryCustomImpl implements WheelsRepositoryCustom {
 	private EntityManager entityManager;
 	
 	@Override
-	public List<Wheels> findWheels(String name, String brand, double amount) {
+	public List<Wheels> findWheels() {
 		StringBuilder hql = new StringBuilder();
 		hql.append("SELECT w FROM Wheels w");
 		return entityManager.createQuery(hql.toString(),Wheels.class).getResultList();
 	}
+
+	
+
 	
 
 }

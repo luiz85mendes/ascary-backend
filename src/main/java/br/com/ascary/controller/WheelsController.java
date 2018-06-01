@@ -18,11 +18,11 @@ import br.com.ascary.service.WheelsService;
 public class WheelsController {
 	
 	@Autowired
-	WheelsService wheelsService;
+	private WheelsService wheelsService;
 	
 	@GetMapping("/buscar")
 	public ResponseEntity<Collection<Wheels>> findAllWheels(String name, String brand, Double amount) {
-		Collection<Wheels> foundWheels = wheelsService.findWheels(name, brand, amount);
+		Collection<Wheels> foundWheels = wheelsService.findWheels();
 		return new ResponseEntity<>(foundWheels, HttpStatus.OK); 
 		
 	}

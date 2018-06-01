@@ -10,16 +10,15 @@ public class Wheels {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long id;
+	private Long id;
 	
 	private String name;
 	private String brand;
 	private Double amount;
-
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -34,11 +33,13 @@ public class Wheels {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public double getAmount() {
+	public Double getAmount() {
 		return amount;
 	}
-	public void setAmount(double amount) {
+	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
+	
+	
 	
 }
