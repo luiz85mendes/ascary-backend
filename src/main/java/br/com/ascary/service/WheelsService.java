@@ -27,8 +27,7 @@ public class WheelsService {
 		return repository.findWheels();
 
 	}
-
-
+	
 	public Wheels save(Wheels wheels) {
 		return repository.save(wheels);
 		
@@ -37,6 +36,10 @@ public class WheelsService {
 	public Wheels deleteById(Long id) {
 		repository.deleteById(id);
 		return null;
+	}
+	
+	public List<Wheels> findWheelsList(String filtro) {
+		return repository.findWheelsList(filtro);
 	}
 	
 //	public Wheels save(Wheels wheels) {

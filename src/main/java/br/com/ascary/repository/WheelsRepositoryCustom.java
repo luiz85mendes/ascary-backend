@@ -12,6 +12,8 @@ public interface WheelsRepositoryCustom {
 	
 		
 		List<Wheels> findWheels();
+		
+		//List<Wheels> findWheelsList(String filtro);
 			
 
 }
